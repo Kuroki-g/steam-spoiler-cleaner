@@ -1,0 +1,17 @@
+{
+    "name": "steam-spoiler-cleaner",
+    "description": "SteamのコミュニティのSpoilerを取り除きます。",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://steamcommunity.com/app/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
